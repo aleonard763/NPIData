@@ -1,0 +1,2981 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Provider Flat File"
+  DTS:DTSID="{6DA8C1BE-FCF9-4DF8-9CAF-E9741B66076F}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x0022_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="E:\Andy\MedicalData\NPI\npidata_20050523-20130310.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="NPI"
+          DTS:DTSID="{0C73C6D2-5D72-4670-BC35-2A90575B0B52}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Entity Type Code"
+          DTS:DTSID="{6B9060E5-144B-43F5-93E8-EE49CBA81F0B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Replacement NPI"
+          DTS:DTSID="{FB8D1196-B1FB-40E4-AC02-DE0974962EB9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Employer Identification Number (EIN)"
+          DTS:DTSID="{3DABD99C-C9A3-4A5F-AB66-DE76D61CEF94}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="70"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Organization Name (Legal Business Name)"
+          DTS:DTSID="{F9683027-55D0-4477-A20B-CC43DBAB141C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Last Name (Legal Name)"
+          DTS:DTSID="{A0F430F4-7D74-4C5E-9384-0CB44A8D3A5A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider First Name"
+          DTS:DTSID="{32A8638C-CB6E-4839-80DF-DFA54CB18FB2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Middle Name"
+          DTS:DTSID="{C090F1A3-93DA-47A1-B66B-24847DD34BBD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Name Prefix Text"
+          DTS:DTSID="{70573F44-5C2E-44D0-B675-B46168BBD4B4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Name Suffix Text"
+          DTS:DTSID="{4B90FF12-854E-43EA-A837-40BBFCF3914D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Credential Text"
+          DTS:DTSID="{F4E7A4B3-5B08-4F5D-B067-73B026E0F752}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="70"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other Organization Name"
+          DTS:DTSID="{38F938C6-3856-4EEB-A191-53B7F93EF17B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other Organization Name Type Code"
+          DTS:DTSID="{063004A1-0FD1-46EC-BE04-5058B864FDE7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other Last Name"
+          DTS:DTSID="{DDC871C3-BB1B-4582-AD52-DCA465B2CBE8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other First Name"
+          DTS:DTSID="{4355700E-1DA8-4AB2-AC8B-1C1F0BD69360}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other Middle Name"
+          DTS:DTSID="{B9F39167-B1DD-4DAA-9812-01CA4E11B7A5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other Name Prefix Text"
+          DTS:DTSID="{A5DB0B3D-E386-436C-8084-9B14D396B0D0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other Name Suffix Text"
+          DTS:DTSID="{4F40E1E5-FA6D-4D2C-99D9-F5FB95AD1074}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other Credential Text"
+          DTS:DTSID="{342D719E-928E-4679-BE9C-43C59DF30536}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Other Last Name Type Code"
+          DTS:DTSID="{08431176-43A3-4897-BAE6-B8394014ECEE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="55"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider First Line Business Mailing Address"
+          DTS:DTSID="{94981C2E-BBDB-472A-A72E-BF6C937A0969}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="55"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Second Line Business Mailing Address"
+          DTS:DTSID="{B8988C3E-4A30-41F7-96F9-8376FF6171A1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Mailing Address City Name"
+          DTS:DTSID="{710C9DBB-8783-42C7-A8B2-FA3D7B0FF14F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Mailing Address State Name"
+          DTS:DTSID="{136D28B6-5805-45E0-A52D-0E4C448281F1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Mailing Address Postal Code"
+          DTS:DTSID="{60F8E8CC-2D2D-4C92-AAE9-F3270C7B96A1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Mailing Address Country Code (If outside U S )"
+          DTS:DTSID="{A85ED43F-708F-4B22-A2D7-AF3B27E5D1FC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Mailing Address Telephone Number"
+          DTS:DTSID="{8103A9C4-0DC7-46D9-BB43-15B6CBD2037F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Mailing Address Fax Number"
+          DTS:DTSID="{0FA44A5E-1441-4031-A9BC-DD97EE2FFAAC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="55"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider First Line Business Practice Location Address"
+          DTS:DTSID="{E083B0B1-C38C-4710-9AAC-063DDECB5D05}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="55"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Second Line Business Practice Location Address"
+          DTS:DTSID="{8F2D170A-5DFE-458A-B514-27EF55F4461A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="55"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Practice Location Address City Name"
+          DTS:DTSID="{15B8A438-7501-4700-A347-A53E27C2B602}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="55"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Practice Location Address State Name"
+          DTS:DTSID="{83CD47D5-E365-433B-943F-DDC9449859DC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Practice Location Address Postal Code"
+          DTS:DTSID="{F9378E1E-9B60-4D4A-A901-677D99E88197}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Practice Location Address Country Code (If outside U S )"
+          DTS:DTSID="{E900229B-8FB3-44B9-AB14-2A9C7C745B16}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Practice Location Address Telephone Number"
+          DTS:DTSID="{53AD8C73-C8E5-46F7-821F-22E930C4FCE4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Business Practice Location Address Fax Number"
+          DTS:DTSID="{24EE34E5-D7D8-4EDD-9931-64444829D4E8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Enumeration Date"
+          DTS:DTSID="{FAFE3716-57AF-4012-842F-507AA3D0B466}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Last Update Date"
+          DTS:DTSID="{4193DC36-DDFE-4D5F-A798-7E7F116235CE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="NPI Deactivation Reason Code"
+          DTS:DTSID="{CDA469AB-02C8-4065-B2BF-95EFFCEC6B21}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="NPI Deactivation Date"
+          DTS:DTSID="{9484CBE6-72CF-4754-8D8D-19A55826FAB3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="NPI Reactivation Date"
+          DTS:DTSID="{A24C2BB8-9B39-4611-A20D-AA956C523860}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider Gender Code"
+          DTS:DTSID="{DFFAF176-4310-4511-8153-30AE5DD85C8E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Authorized Official Last Name"
+          DTS:DTSID="{C20C75E2-15EF-4A76-A67F-0827E6DE8CB4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Authorized Official First Name"
+          DTS:DTSID="{1534C312-88AD-46F3-8EC0-E8DFC07B22EE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Authorized Official Middle Name"
+          DTS:DTSID="{CB4F8FE6-CCBF-4056-972C-0D9502A0790D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Authorized Official Title or Position"
+          DTS:DTSID="{5BCF2368-871F-4E9F-8B88-92AA1CB8E463}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Authorized Official Telephone Number"
+          DTS:DTSID="{3328AC94-FB08-44B4-ADB2-0F1A1C4606E2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_1"
+          DTS:DTSID="{388A422F-337E-4D35-A35E-B9BD38962858}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_1"
+          DTS:DTSID="{DAF6B91E-EA50-4E15-B120-E37E87F3F563}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_1"
+          DTS:DTSID="{2CD25E07-37ED-47B0-B267-279629782DAB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_1"
+          DTS:DTSID="{E918C9CF-8AD6-4CF1-8505-FBA84201803F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_2"
+          DTS:DTSID="{30518006-77F3-4BC1-A2DC-5DF145FF9E4D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_2"
+          DTS:DTSID="{662DC8A2-C0E2-4FCE-AF99-B79402993D72}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_2"
+          DTS:DTSID="{86A1E134-D1B7-420C-9AE1-5210BEB4B568}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_2"
+          DTS:DTSID="{085F0E19-5188-42C7-8A5A-84BFE31C1B99}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_3"
+          DTS:DTSID="{393F7BFC-B204-4F6D-A3B5-0524FE9B50AE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_3"
+          DTS:DTSID="{D944C8BE-2173-4EF2-89C7-2C3BDF413ED9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_3"
+          DTS:DTSID="{C768F967-FCE2-4A30-BD17-CFF4B7AB136F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_3"
+          DTS:DTSID="{C5F5FF69-A298-41EF-8F6D-604F3652DD7D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_4"
+          DTS:DTSID="{555C76A1-B5B5-496C-8390-511B48459D3C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_4"
+          DTS:DTSID="{0AB448E2-C5E8-4069-B1EB-FC94C096B512}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_4"
+          DTS:DTSID="{6EE2DDF8-353D-4707-A98A-5D2F6E7297BC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_4"
+          DTS:DTSID="{79753241-B11D-4819-BA3B-8659BA2F3BEC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_5"
+          DTS:DTSID="{76F105A9-D7E8-4EF5-BEEC-F41D6C9E4893}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_5"
+          DTS:DTSID="{F0A36B00-93A4-4EB7-8E1B-C6B0B7478522}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_5"
+          DTS:DTSID="{9B3A879D-7203-484A-A374-DA59E5244CE0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_5"
+          DTS:DTSID="{20FBFAAF-2A00-4013-B169-BFD8B3A44105}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_6"
+          DTS:DTSID="{F6AEAC21-4F72-4B0B-9D05-A413A9CE779C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_6"
+          DTS:DTSID="{BA51671E-919F-4E14-B482-F9F16B9C123C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_6"
+          DTS:DTSID="{16D2C03B-07C9-42D2-9261-7DF9BBE95807}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_6"
+          DTS:DTSID="{C1583A43-31F6-424A-9CF8-E27AEFD32D00}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_7"
+          DTS:DTSID="{F750F83E-2807-4D85-98B2-CB222187A967}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_7"
+          DTS:DTSID="{20CD744D-65B4-4220-9F7B-1B3B9EC9522F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_7"
+          DTS:DTSID="{D540D841-1D48-4840-8866-003EC672F6B7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_7"
+          DTS:DTSID="{2881C610-4CCE-4B22-9A7B-3DF72CAC1174}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_8"
+          DTS:DTSID="{392A8E00-B95E-4BB2-A278-EFF31BD5BA7D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_8"
+          DTS:DTSID="{A798A112-37E1-49CB-B54C-4C5611F70F9A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_8"
+          DTS:DTSID="{46F32FD5-3EF7-40F6-9FFE-07D240C3B563}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_8"
+          DTS:DTSID="{EDD15899-C8CF-480E-B341-20B1351A46BA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_9"
+          DTS:DTSID="{8B277B85-5F2F-4954-8805-A45996D1DE7C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_9"
+          DTS:DTSID="{D0694B47-5409-432A-B3B7-169887A2F160}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_9"
+          DTS:DTSID="{ABD36EBA-A2FF-4EBE-8E76-80185589EF74}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_9"
+          DTS:DTSID="{86BFC553-6BC5-457B-86E7-09C711F228D7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_10"
+          DTS:DTSID="{FBBA04A7-5F0F-48F9-AFBC-379E9342FB6E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_10"
+          DTS:DTSID="{192D0BF3-A17D-45D5-BE59-2895528B5BF7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_10"
+          DTS:DTSID="{08BD3433-7E60-4C8F-B66E-F5421AE012C5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_10"
+          DTS:DTSID="{D6E67801-4568-47F5-9774-889E421EF9EF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_11"
+          DTS:DTSID="{469B25DF-4459-4293-BEE1-42662D2B1674}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_11"
+          DTS:DTSID="{5AE5ED95-7573-42EF-9241-32DE1E216952}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_11"
+          DTS:DTSID="{705AE6AB-FE70-4659-B13E-09AFD147C850}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_11"
+          DTS:DTSID="{BE5C92CD-9940-4066-A908-5FCE8D8DF0FB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_12"
+          DTS:DTSID="{6671B318-D0E6-4FEC-A79F-83BEA200821F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_12"
+          DTS:DTSID="{573078B0-E452-4C1D-A862-5A919436775A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_12"
+          DTS:DTSID="{B5B5C4C4-465B-4ADF-BE0F-061FEBEE8D1F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_12"
+          DTS:DTSID="{EBC1380C-32EC-406B-A0A5-60963B9D45F9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_13"
+          DTS:DTSID="{F40D7BA3-54AB-41CB-90FD-5D7F37BDB62A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_13"
+          DTS:DTSID="{603449F0-F4AC-4829-AEF6-2FD0F4B47C14}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_13"
+          DTS:DTSID="{6DF05A11-6458-4679-96DA-807176BBDBA3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_13"
+          DTS:DTSID="{ED1A4560-C895-4351-9A6C-901C004772AB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_14"
+          DTS:DTSID="{CC1D5FAD-A714-49E4-8BF6-1CFB64A83C34}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_14"
+          DTS:DTSID="{EE99BEBF-0AF0-4BB6-AC5C-4438BA293E7B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_14"
+          DTS:DTSID="{4CDFC054-0486-475D-B620-7B51B34A023F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_14"
+          DTS:DTSID="{DEBA66F9-86A4-4A96-AFF3-D38F5A848435}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Code_15"
+          DTS:DTSID="{537CA1E6-4FC3-4DEA-B928-605FDBB644FA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number_15"
+          DTS:DTSID="{FC2B051D-2D98-4810-988D-970FC7F35D3A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Provider License Number State Code_15"
+          DTS:DTSID="{ECCAC9F1-E1EC-4262-BCC6-47544844ED78}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="1"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Primary Taxonomy Switch_15"
+          DTS:DTSID="{C9CAEF05-2503-4945-9597-15C73107928C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_1"
+          DTS:DTSID="{55C0F951-78BC-45EA-A91E-27EF2119206E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_1"
+          DTS:DTSID="{808C8556-6EAC-4305-AD06-591C55DEFC04}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_1"
+          DTS:DTSID="{20674622-8FF5-4536-8D9A-067E7DFF8DBD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_1"
+          DTS:DTSID="{32250F23-ED15-467D-9A03-6D7B8BF3D204}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_2"
+          DTS:DTSID="{431E3580-E1D2-4E64-961A-792CF81B4FE5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_2"
+          DTS:DTSID="{15ACCA87-6E0B-4A92-985B-7269F18772EB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_2"
+          DTS:DTSID="{6FCFD84E-5594-42E7-91CC-C109C1AA4AFC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_2"
+          DTS:DTSID="{3D782B71-609F-4367-8049-D3DE21FF81B9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_3"
+          DTS:DTSID="{7FD24F9B-2C45-486A-A6CC-0C6A049FB3F3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_3"
+          DTS:DTSID="{BDC00A1E-2ADA-441A-ABE4-BDB9F2BFF916}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_3"
+          DTS:DTSID="{23DE5C3E-55E9-4364-9917-8E5D1D773155}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_3"
+          DTS:DTSID="{164A9BC8-BB83-4DD3-8F1D-2188068D44B1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_4"
+          DTS:DTSID="{2926E0D2-D662-4A7B-9203-FFA1DD0C7C76}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_4"
+          DTS:DTSID="{29A8B3FB-B75E-4514-8DC3-949AA7481072}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_4"
+          DTS:DTSID="{7B02C3D3-89F8-4A69-B8FD-F26CF02EB0F5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_4"
+          DTS:DTSID="{B34DC78B-9740-4106-8FC6-DD67628796D8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_5"
+          DTS:DTSID="{0AD62F1E-B74F-449B-B4C3-C6BE43957920}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_5"
+          DTS:DTSID="{4F100526-1330-4B5D-B9DA-E4CFC3B2AE82}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_5"
+          DTS:DTSID="{63594400-1807-4151-A972-540A7B58D442}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_5"
+          DTS:DTSID="{A6A9BF3D-CF93-4F13-8AE6-59588C8B3E8D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_6"
+          DTS:DTSID="{3567BE39-8A0B-42FC-807F-69B7A43F100F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_6"
+          DTS:DTSID="{E85FA635-0F94-468B-AA71-886D72C5D055}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_6"
+          DTS:DTSID="{93876651-1728-4968-B9C5-3C08D3D07F39}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_6"
+          DTS:DTSID="{BC235736-606B-495F-B80D-49D022FAC41F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_7"
+          DTS:DTSID="{0A9F70B3-1D34-49A2-AF02-91B6D687CC81}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_7"
+          DTS:DTSID="{D8545718-0731-4419-B886-F9C7BB7C6FE6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_7"
+          DTS:DTSID="{A91E3463-342B-4BE5-A061-86E01EF39DC1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_7"
+          DTS:DTSID="{C108ADE2-8680-428A-8D93-EBD2753E0BC9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_8"
+          DTS:DTSID="{A21F3BEA-B99E-499E-A0CE-632F2A6AF29B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_8"
+          DTS:DTSID="{23BB3C3A-0FD2-4D9F-B29D-E4E2358DE551}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_8"
+          DTS:DTSID="{4F7DCD9E-CB11-40B8-8E0F-01AE09939AA3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_8"
+          DTS:DTSID="{53738B7F-5AB0-49A9-A549-80AE040ADF35}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_9"
+          DTS:DTSID="{7927DC01-9F8A-4315-A115-E3F5B59AAEDD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_9"
+          DTS:DTSID="{F1F75C7E-7AE6-4316-9698-97509C51EF0B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_9"
+          DTS:DTSID="{702A1A7E-3234-4E2E-988C-963918A37E7B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_9"
+          DTS:DTSID="{03FAFB60-1C3E-41EA-8EC0-E48FD43533AC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_10"
+          DTS:DTSID="{9E4F301F-3993-47A2-A293-46E499396B45}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_10"
+          DTS:DTSID="{33979526-429A-4C1F-9415-F5B8D69E473B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_10"
+          DTS:DTSID="{066A4CAE-C008-491A-AD2F-0A027D0D919B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_10"
+          DTS:DTSID="{7181B5CF-4DA4-4612-BA86-129CD036B374}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_11"
+          DTS:DTSID="{92A6D06E-8F77-4478-8548-130D346FD783}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_11"
+          DTS:DTSID="{BF118ACE-4348-4456-8045-6B8746719BCD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_11"
+          DTS:DTSID="{12D7D5C9-F193-4333-95EE-15AE81B1CA19}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_11"
+          DTS:DTSID="{C8AF4658-D032-40A2-9A27-56BDCBBDCCF3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_12"
+          DTS:DTSID="{753A31A4-6C0F-4F29-8CF2-0575F4524B1E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_12"
+          DTS:DTSID="{33FCE38A-29DA-4B84-93BE-C4CC8C713EBC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_12"
+          DTS:DTSID="{565CDEF8-8690-4A57-81B2-D4B1E5F57128}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_12"
+          DTS:DTSID="{16EB3546-B4F1-4F2C-9530-E18183B9D771}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_13"
+          DTS:DTSID="{4743C509-8FCC-417B-8F3D-0EFBC99DB3CE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_13"
+          DTS:DTSID="{87956FF8-7358-489D-BBCB-6D0B54A88837}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_13"
+          DTS:DTSID="{9BA51519-5589-49A5-9236-B8CBC56F17F2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_13"
+          DTS:DTSID="{FD0BD1D2-CF7B-4899-8B75-869139F2AC1E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_14"
+          DTS:DTSID="{2D4037E6-EDD7-4730-813C-27922D0F5972}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_14"
+          DTS:DTSID="{ED9FB20C-3E25-4091-8880-3C14989003EB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_14"
+          DTS:DTSID="{18AF469D-949A-49B9-B4DF-6CA0CECF8299}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_14"
+          DTS:DTSID="{E690D0ED-A635-4402-82A0-019B9152E649}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_15"
+          DTS:DTSID="{03FEA85C-3897-4A4D-9182-0149707FB48D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_15"
+          DTS:DTSID="{588EA185-8FD0-4BDD-8B83-411EB93E605D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_15"
+          DTS:DTSID="{F7B209CC-7AA5-4E6E-AF93-380B6856F7EA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_15"
+          DTS:DTSID="{AC9FCFD9-AF67-4959-8943-3A72E0E6BC88}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_16"
+          DTS:DTSID="{3BAB7BC6-D51E-4B7B-B8C7-76B4F2AD6714}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_16"
+          DTS:DTSID="{59D09540-AFDD-4562-840C-EE5A8FB4EE88}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_16"
+          DTS:DTSID="{4E52FC3E-6F26-4B93-A16E-C9600E0D23A1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_16"
+          DTS:DTSID="{55BE32AB-7AF8-4C29-A9D7-C251448C0EF5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_17"
+          DTS:DTSID="{4F48C6B9-63CA-430B-9C75-3D46E0337A5D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_17"
+          DTS:DTSID="{B88B7CDA-0AB9-42CC-8AE2-2C6A4C05082B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_17"
+          DTS:DTSID="{ED8160EC-F865-4E9D-A57E-E3C151081BAB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_17"
+          DTS:DTSID="{790EC151-FD53-4850-8583-F7F235E0C297}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_18"
+          DTS:DTSID="{E40B4862-891D-48FB-9F8A-CDAB6FECAC04}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_18"
+          DTS:DTSID="{12872447-2D3E-4246-8BEA-0AF7573F000E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_18"
+          DTS:DTSID="{D043D1EC-E078-46A8-B972-78D5001C5965}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_18"
+          DTS:DTSID="{CECB1728-A270-4317-8A74-360C2C46BEEB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_19"
+          DTS:DTSID="{3E725F51-1BD3-4628-AC79-949E76450BA6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_19"
+          DTS:DTSID="{639C4C88-E6DC-4DAA-8DEA-7A80B8987231}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_19"
+          DTS:DTSID="{6A864CF6-E342-4A79-8F44-72B495BD716F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_19"
+          DTS:DTSID="{B4EEF8F5-9163-4B2B-A84E-97AA265399C4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_20"
+          DTS:DTSID="{CABD636F-7E25-4627-8300-2873C58E3C2A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_20"
+          DTS:DTSID="{6D3EAFAC-FC31-4400-8C3D-AC1FB6EBE46F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_20"
+          DTS:DTSID="{68D2D801-2C5B-407C-A944-40028FFA04A6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_20"
+          DTS:DTSID="{DF445DC3-2B99-4687-BDB4-C974677F56CA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_21"
+          DTS:DTSID="{62226E86-343C-42FD-B488-F7B05BFBF8A1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_21"
+          DTS:DTSID="{9A9DFECF-4052-4CDF-846C-D42ED8FC2F09}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_21"
+          DTS:DTSID="{930DC98D-3011-4DAC-9B44-F65E1F2E1D0E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_21"
+          DTS:DTSID="{85821554-8CC7-4889-9403-20AD464DD0AD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_22"
+          DTS:DTSID="{342FE7FD-E1D7-4BD4-ADC5-67449A673567}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_22"
+          DTS:DTSID="{686C7350-128A-432C-971A-48F0D9FFA421}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_22"
+          DTS:DTSID="{86C9B021-DF23-4BE2-8B19-53461CA0B119}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_22"
+          DTS:DTSID="{52E44864-3503-4EC4-B485-8589ADD45FE4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_23"
+          DTS:DTSID="{BD2617D2-E8EC-4337-8C27-DD539B03BF5A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_23"
+          DTS:DTSID="{FAE7F21D-6538-4BCF-9089-D82FB252E554}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_23"
+          DTS:DTSID="{F3363F3C-677D-4826-897C-C30DA04DE55B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_23"
+          DTS:DTSID="{C6F006BC-A33D-4C8C-9597-14BA86249EFB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_24"
+          DTS:DTSID="{5656C543-807B-483C-B175-C49CFA24A67E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_24"
+          DTS:DTSID="{6FCA2C45-4051-4446-9538-00113215A56B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_24"
+          DTS:DTSID="{D21B7BF5-A8AC-4D67-9F13-5E942C14DA46}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_24"
+          DTS:DTSID="{ACBEDDE4-E4D5-4572-B19E-F597059317EE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_25"
+          DTS:DTSID="{3BB4D880-4401-4F91-BED8-3C26BDB8D7E4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_25"
+          DTS:DTSID="{49BC143A-DD67-4ADC-885E-A55EE754272A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_25"
+          DTS:DTSID="{379EFAAF-56CD-459E-8163-C39E49E7D576}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_25"
+          DTS:DTSID="{8F412979-FF86-4FA6-B273-F2D4A0044423}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_26"
+          DTS:DTSID="{7F9B9003-0FFA-4ABA-BE89-81DA29921D30}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_26"
+          DTS:DTSID="{86E7F45B-FBBC-458B-B565-A3ABFF193B51}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_26"
+          DTS:DTSID="{CC672454-8C5C-490B-986E-7C9924F02DA8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_26"
+          DTS:DTSID="{0047C9CC-E017-4A08-BD82-C4AD7C7832F0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_27"
+          DTS:DTSID="{7E58080E-806E-4BE4-9878-20C8E90932EA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_27"
+          DTS:DTSID="{63414968-0580-405B-8FB9-FF13CAA33404}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_27"
+          DTS:DTSID="{97E9E17D-B6A0-4389-9969-5D8522C5176A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_27"
+          DTS:DTSID="{EC1C97A3-BE91-4B91-AC73-74959A304532}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_28"
+          DTS:DTSID="{849B675C-6864-4857-91CA-256EAC97C21E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_28"
+          DTS:DTSID="{353977A7-86C6-491B-997B-42B59A445016}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_28"
+          DTS:DTSID="{9ACA2EE0-3B58-426D-B72B-D0A24B159AD2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_28"
+          DTS:DTSID="{FC9C505F-6C3C-473C-9C19-79C0D070DED5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_29"
+          DTS:DTSID="{13F4D920-626A-46F7-A40A-C45D3D768AF4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_29"
+          DTS:DTSID="{21BA4885-AD37-4C30-8C2E-98C7A0AA9754}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_29"
+          DTS:DTSID="{489D01CC-073C-4EAC-9410-3B8B4786057D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_29"
+          DTS:DTSID="{6FE998A9-FC62-47A4-8C03-4670F8461BC0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_30"
+          DTS:DTSID="{91179AB2-6667-4A74-83DF-E41C6FD4100D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_30"
+          DTS:DTSID="{7B5A458D-07F7-422E-BD22-28C15B8E71EF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_30"
+          DTS:DTSID="{BF18538E-D151-45D2-8646-CBA1C3B3E4D0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_30"
+          DTS:DTSID="{BAF1569A-E7A8-4438-8BC7-92BFB06D2B6F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_31"
+          DTS:DTSID="{5E09628E-9081-4D33-A858-08DC1D64A810}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_31"
+          DTS:DTSID="{6B7DFFD4-0CB9-42E4-833E-626575A48AFB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_31"
+          DTS:DTSID="{B882A7F6-913C-44D8-AAAC-EB5F907F236A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_31"
+          DTS:DTSID="{B2BB9497-C6B1-4B6C-85FA-D9EB4C8A6477}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_32"
+          DTS:DTSID="{8BBE2456-15B9-4846-B0F0-EF09D2D91313}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_32"
+          DTS:DTSID="{14415A8D-A5ED-43CB-89ED-BD8BF5E073E4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_32"
+          DTS:DTSID="{5575436E-BCF3-49D7-8EA2-B95C68EC469F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_32"
+          DTS:DTSID="{4D7FA04E-E32B-4B74-8C74-4DD777AF6968}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_33"
+          DTS:DTSID="{0A0F6AD9-8C44-4404-829D-CFAEC6783D34}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_33"
+          DTS:DTSID="{F029DE25-9407-4B23-86C1-50CBF526C43C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_33"
+          DTS:DTSID="{1BD0FD0D-BA8D-4C15-88B8-2331355CF279}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_33"
+          DTS:DTSID="{434A86D1-2DB4-42D2-BC18-2F8651DD0F11}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_34"
+          DTS:DTSID="{8CF9BD40-0F90-4CF1-AD5C-107B837CF710}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_34"
+          DTS:DTSID="{375F4AEE-82A9-4A48-8386-523F1423F231}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_34"
+          DTS:DTSID="{CA524AAD-4703-4E55-B45C-84B45953E4D7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_34"
+          DTS:DTSID="{080174F5-DB4D-4E56-A6A7-EA6124095CA7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_35"
+          DTS:DTSID="{15E8D72E-D0FF-4FC1-AC19-07982E091AD5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_35"
+          DTS:DTSID="{321ABC18-930C-4340-90FD-3CB6952DDE53}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_35"
+          DTS:DTSID="{41104CC3-2A1B-4DBD-99EA-7A38885ECCD6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_35"
+          DTS:DTSID="{65B6EC06-5953-476E-BBB9-DA4BC1FFF583}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_36"
+          DTS:DTSID="{AA097164-D889-4FAA-A4D3-677E02888A81}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_36"
+          DTS:DTSID="{D5614FA5-C13E-458D-8D93-2F52067AD72A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_36"
+          DTS:DTSID="{C3223F56-B19C-44DF-A257-106594CD8F6C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_36"
+          DTS:DTSID="{F0FDF44E-0BC7-48BB-BAFC-07843E4DCECD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_37"
+          DTS:DTSID="{A2D949D5-53AA-43D6-AAFD-6670EE62FDFA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_37"
+          DTS:DTSID="{C28C2EA7-DCEF-4DA0-8DFB-213B911D0082}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_37"
+          DTS:DTSID="{DC4B53BB-61DA-41F9-A3D3-0209EA19F0B7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_37"
+          DTS:DTSID="{A73D3D97-FDC0-4C6C-AB13-E5D2B03257AE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_38"
+          DTS:DTSID="{E1CB5894-7FFA-42A6-B266-2F6255669418}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_38"
+          DTS:DTSID="{EF7D63D3-E8A7-495B-86FB-4701F27B9133}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_38"
+          DTS:DTSID="{D01AE383-92A1-417E-8118-185E9064D13B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_38"
+          DTS:DTSID="{D318B5B4-D3E7-4F80-9D2D-FEB5E715D48D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_39"
+          DTS:DTSID="{15BAC4E6-E189-46EB-9219-507673F12516}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_39"
+          DTS:DTSID="{99DBA4DA-030D-447D-A792-99678CDB6655}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_39"
+          DTS:DTSID="{90A83DAC-BBDD-43F3-83CE-96F852C2F3A5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_39"
+          DTS:DTSID="{B7F37DBC-0B23-49B1-9243-C64EE0132328}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_40"
+          DTS:DTSID="{AF8E3548-6779-4CA5-BA37-518F57532239}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_40"
+          DTS:DTSID="{A0F712C4-4129-45ED-AB85-4664D84E9ABC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_40"
+          DTS:DTSID="{A201699E-5AF0-455A-A9CE-83942C32E91E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_40"
+          DTS:DTSID="{E1D6BDFC-70B5-4CFB-8A1E-CAAA9AB4AD33}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_41"
+          DTS:DTSID="{A26DFB97-8A00-4339-B5BC-E151393BB85D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_41"
+          DTS:DTSID="{D4461764-4DCA-459B-9A5D-5E6E52C19406}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_41"
+          DTS:DTSID="{3208AB12-10D9-4C2C-B63D-C09527F49A5C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_41"
+          DTS:DTSID="{B2319640-EB93-4997-9758-560C0383B49C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_42"
+          DTS:DTSID="{26F8D8F9-268A-4787-9359-5CBFA78815C3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_42"
+          DTS:DTSID="{0959E3EE-9C76-4872-8105-09EE00EC31AE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_42"
+          DTS:DTSID="{0F66171E-5AB5-4E1F-901E-5D306A0154A0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_42"
+          DTS:DTSID="{0FDFC127-54E3-433B-BF9F-F83ECD077C93}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_43"
+          DTS:DTSID="{50AAB6FB-41FB-4D01-8D8C-2112907A1B4B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_43"
+          DTS:DTSID="{B78330CA-3E71-48E4-BD89-2186DA64CAA5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_43"
+          DTS:DTSID="{D86FAF5F-7472-4FDB-8EEE-CA8411B87B63}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_43"
+          DTS:DTSID="{CCC7FCB1-9E40-4F37-98C1-0876FAA046CD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_44"
+          DTS:DTSID="{22234A83-1368-43B1-8668-3764F47D603D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_44"
+          DTS:DTSID="{A84B919C-D08F-4803-A412-9018620DEB82}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_44"
+          DTS:DTSID="{C44A3889-FDC4-45CB-8493-04AF60369D11}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_44"
+          DTS:DTSID="{5AD9EE8F-8DF7-4AF6-9623-98E946CB24C3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_45"
+          DTS:DTSID="{A28F07C7-4F23-41A2-88F3-1C7ADFDF7BA8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_45"
+          DTS:DTSID="{A8CC918C-A2CE-46DC-8F2C-070822A10B65}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_45"
+          DTS:DTSID="{3FAF6E0B-4C93-4A26-B198-71A2AFD96FAB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_45"
+          DTS:DTSID="{ECAD6E41-728E-428C-A238-E11950C1AB26}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_46"
+          DTS:DTSID="{84B36B9C-7224-4D2E-B858-E66D1725B2C0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_46"
+          DTS:DTSID="{66225E02-ECA3-4313-AF76-AACD75A54420}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_46"
+          DTS:DTSID="{31688059-3CA7-4D27-8819-490374C3C8B3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_46"
+          DTS:DTSID="{06E8C5C2-E84A-4A7C-85C6-E5B38BC6592D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_47"
+          DTS:DTSID="{AF880A11-0C2F-43B0-988F-460082D7F9B2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_47"
+          DTS:DTSID="{A46247B8-EB1A-4503-8565-3147DF91D4D3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_47"
+          DTS:DTSID="{B708B62E-8F7A-45DB-B3E6-25D40180A383}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_47"
+          DTS:DTSID="{F94B626F-EE5E-4B20-A59C-7A6BDD6639C5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_48"
+          DTS:DTSID="{2AB8F902-FE1B-4AF5-888C-64B206D51449}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_48"
+          DTS:DTSID="{422708D3-CC79-4760-AA35-CC5C78306D01}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_48"
+          DTS:DTSID="{76F83D61-99AA-4402-A84F-EC056D5388B6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_48"
+          DTS:DTSID="{2A8619B3-1272-4A4F-8D30-99312F711324}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_49"
+          DTS:DTSID="{D0595713-2E36-4526-B3C8-36360EB14732}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_49"
+          DTS:DTSID="{AC1E3F00-3196-47C1-92AA-D9735B04B6C3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_49"
+          DTS:DTSID="{9E471FA4-FB36-46DE-A953-7C5174D964DB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_49"
+          DTS:DTSID="{72ADB505-6687-457C-B7B8-CBD06067285A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier_50"
+          DTS:DTSID="{EF0E8F9F-BFA6-4F5E-AF8E-8421F1225972}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Type Code_50"
+          DTS:DTSID="{6AE03CFD-71FD-4C06-B3D9-1CA29A0DCF89}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="2"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier State_50"
+          DTS:DTSID="{45734845-9913-4B73-B241-DE4C553E43DA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="80"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Other Provider Identifier Issuer_50"
+          DTS:DTSID="{720264A7-63CD-4ED1-B1BE-D5C001AB6418}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Is Sole Proprietor"
+          DTS:DTSID="{6508B77A-72B0-4DFC-A3DA-E1DB675FB07C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Is Organization Subpart"
+          DTS:DTSID="{6116693D-797B-4153-B3F4-27F9FA3B9650}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="70"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Parent Organization LBN"
+          DTS:DTSID="{74FE3CBA-8A0D-48DE-A4D5-2FFB89B6374B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Parent Organization TIN"
+          DTS:DTSID="{07C32EBF-39CB-4145-962B-DEE85936587B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Authorized Official Name Prefix Text"
+          DTS:DTSID="{D13E59A5-B228-4369-B443-B31044E3CF3B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Authorized Official Name Suffix Text"
+          DTS:DTSID="{3ECFB935-CF4D-4F52-A010-78E5AB035D93}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Authorized Official Credential Text"
+          DTS:DTSID="{A0F977A2-EC05-4349-987B-911E89DE47E5}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_1"
+          DTS:DTSID="{9EF087FC-2A69-421C-9D4A-33203EB8BFC4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_2"
+          DTS:DTSID="{ED0D73C9-FF2E-41B1-A3B4-978EDBC2F4C6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_3"
+          DTS:DTSID="{0B34C343-88DF-4945-88A4-03CEF65B17A1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_4"
+          DTS:DTSID="{B6B1B4E2-4174-48C7-838F-090D04157FF4}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_5"
+          DTS:DTSID="{D65DE8B3-71CD-4882-AD95-E9AB33472903}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_6"
+          DTS:DTSID="{6DD7C329-5F07-4B6F-8534-213941625AAB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_7"
+          DTS:DTSID="{3FC90ED9-A36F-4E32-8002-D7163FC9BFC3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_8"
+          DTS:DTSID="{1416B4A5-D8EC-43CA-B923-77F2EB28CC56}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_9"
+          DTS:DTSID="{210E5D81-13A5-4BFC-B6DF-7F8EF67EB622}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_10"
+          DTS:DTSID="{3257FE90-FABD-4392-897B-90C865DFA390}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_11"
+          DTS:DTSID="{7E19F269-CD80-463C-83C9-5C5EE87234B0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_12"
+          DTS:DTSID="{FF7919BA-1365-49EB-B0E3-5F813287BB9B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_13"
+          DTS:DTSID="{91B35556-FE9D-4324-9C4C-738360F5FEAF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_14"
+          DTS:DTSID="{28974314-47BA-438C-9F0F-D75C68DA958D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000A_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Healthcare Provider Taxonomy Group_15"
+          DTS:DTSID="{0E17DC88-2DB1-44F6-A638-263D5D6C5141}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
